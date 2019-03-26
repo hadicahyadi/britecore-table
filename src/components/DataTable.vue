@@ -22,7 +22,6 @@
 <script>
 export default {
   name: 'DataTable',
-  props: ['items', 'fields', 'changeHandler'],
   props: {
     items: {
       type: Array,
