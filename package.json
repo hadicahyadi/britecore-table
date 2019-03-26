@@ -1,6 +1,7 @@
 {
-  "name": "app",
+  "name": "britecore-test-app",
   "version": "0.1.0",
+  "author": "Hadi Cahyadi",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
