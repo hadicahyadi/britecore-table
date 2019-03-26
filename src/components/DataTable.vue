@@ -3,14 +3,14 @@
     <table class="table">
       <thead>
         <tr>
-          <th v-for="column in columns">
+          <th v-for="column in columns" v-bind:key="column">
             {{column}}
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in items">
-          <td v-for="column in columns">
+        <tr v-for="(item, index) in items" v-bind:key="index">
+          <td v-for="column in columns" v-bind:key="column">
             <input :item-id="index" @input="descriptionChanged" type="text" class="form-control form-control-sm" v-if="column === 'Description'" :value="getRowValue(item, column)" />
             <span v-else>{{getRowValue(item, column)}}</span>
           </td>
